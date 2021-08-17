@@ -1,0 +1,25 @@
+﻿@model TagItem
+@{ Layout = "_Layout"; ViewBag.Title = "Tags";}
+
+
+<div class="col-md-3">
+    <table class="table table-sm table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Count</th>
+                <th scope="col">Percantage (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Count</td>
+                    <td>@item.Percentage</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
