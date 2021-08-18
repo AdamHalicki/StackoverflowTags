@@ -35,3 +35,4 @@ C:\Users\adamh\Desktop\Projekty\StackoverflowTags\StackoverflowTags\obj\Debug\ne
 C:\Users\adamh\Desktop\Projekty\StackoverflowTags\StackoverflowTags\obj\Debug\net5.0\StackoverflowTags.csproj.CopyComplete
 C:\Users\adamh\Desktop\Projekty\StackoverflowTags\StackoverflowTags\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\adamh\Desktop\Projekty\StackoverflowTags\StackoverflowTags\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\StackoverflowTags\bin\Debug\net5.0\AutoMapper.dll

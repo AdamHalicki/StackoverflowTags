@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "gHIsRUOT83xrWqwwurDZCLY7xYDjAQWrDINaFz1PPghBXTJMq3fiMrB50i3LMU5/KPsARXGLtS39HCzWz9GFww==",
+  "dgSpecHash": "qMZ9GgNpP/BkobIN0oQ07Xy5SKMRd6keVi07jioAW64/9V3BLgoWK1XkBcCSc289COCUp4WJ5Bzy50F2Lh2Dtw==",
   "success": true,
   "projectFilePath": "C:\\Users\\adamh\\Desktop\\Projekty\\StackoverflowTags\\StackoverflowTags\\StackoverflowTags.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\adamh\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\adamh\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\adamh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\adamh\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\adamh\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

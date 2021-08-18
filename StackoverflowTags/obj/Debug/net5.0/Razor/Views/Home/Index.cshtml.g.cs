@@ -14,13 +14,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\adamh\Desktop\Projekty\StackoverflowTags\StackoverflowTags\Views\_ViewImports.cshtml"
-using StackoverflowTags.Models;
+using StackoverflowTags.Models.Entities;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e23ec797e079b326b5269bb7efb69ce31d0bae4a", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3e1dec99a492a670ee90d06c9b81b566796031ca", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"52e4f5f4890d0260c614c1f485b1838fa1d1ce3b", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<TagItem>
     {
         #pragma warning disable 1998
