@@ -11,5 +11,6 @@ namespace StackoverflowTags.Models
     {
         public Task<TagItem> GetTagsAsync();
         public Task<TagItem> GetTagsAsync(int pageId);
+        public Task GetAllTagsAsync(TagItem tagItem);
     }
 }

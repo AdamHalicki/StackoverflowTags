@@ -30,7 +30,6 @@ namespace StackoverflowTags.Controllers
 
             decimal sum = tagItem.Items.Sum(i => i.Count);
             tagItem.Items.ForEach(ti => ti.Percentage = ti.Count / sum * 100);
-            tagItem.PageId = 1;
 
             return View(tagItem);
         }
@@ -39,8 +38,14 @@ namespace StackoverflowTags.Controllers
         public async Task<IActionResult> Index(int pageId)
         {
             TagItem tagItem = new TagItem();
-
-            tagItem = await _tagRepository.GetTagsAsync(pageId);
+            if(pageId != -1)
+            {
+                tagItem = await _tagRepository.GetTagsAsync(pageId);
+            }
+            else
+            {
+                await _tagRepository.GetAllTagsAsync(tagItem);
+            }
 
             decimal sum = tagItem.Items.Sum(i => i.Count);
             tagItem.Items.ForEach(ti => ti.Percentage = ti.Count / sum * 100);

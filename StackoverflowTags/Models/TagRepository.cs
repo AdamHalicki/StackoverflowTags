@@ -46,5 +46,25 @@ namespace StackoverflowTags.Models
                 }
             }
         }
+
+        public async Task GetAllTagsAsync(TagItem tagItem)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+            using (var httpClient = new HttpClient(handler))
+            {
+                for(int i = 1; i < 11; i++)
+                {
+                    using (var response = await httpClient
+                            .GetAsync($"https://api.stackexchange.com/2.3/tags?order=desc&sort=popular&site=stackoverflow&pagesize=100&page={i}"))
+                    {
+                        string apiResponse = await response.Content.ReadAsStringAsync();
+                        var tagObject = JsonConvert.DeserializeObject<TagItem>(apiResponse);
+                        tagItem.Items.AddRange(tagObject.Items);
+                    }
+                }
+            }
+        }
     }
 }

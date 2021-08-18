@@ -1,8 +1,21 @@
 ﻿@model TagItem
 @{ Layout = "_Layout"; ViewBag.Title = "Tags";}
 
-
-<div class="col-md-3">
+<h3 class="offset-md-5">Choose page</h3>
+<div class="row col-md-7 offset-md-4">
+    @for (int i = 1; i < 11; i++)
+    {
+        <form asp-page-handler="view" method="post">
+            <button class="btn btn-default">@i</button>
+            <input type="hidden" name="pageId" value="@i"/>
+        </form>
+    }
+    <form asp-page-handler="view" method="post">
+        <button class="btn btn-default">All</button>
+        <input type="hidden" name="pageId" value="-1" />
+    </form>
+</div>
+<div class="col-md-3 offset-md-4">
     <table class="table table-sm table-bordered">
         <thead class="thead-dark">
             <tr>

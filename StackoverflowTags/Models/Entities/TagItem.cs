@@ -17,7 +17,5 @@ namespace StackoverflowTags.Models.Entities
         [JsonProperty("items")]
         public List<Item> Items { get; set; }
 
-        public int PageId { get; set; }
-
     }
 }
