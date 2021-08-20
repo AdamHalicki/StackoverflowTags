@@ -1,0 +1,12 @@
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\bin\Debug\net5.0\Application.deps.json
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\bin\Debug\net5.0\Application.dll
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\bin\Debug\net5.0\ref\Application.dll
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\bin\Debug\net5.0\Application.pdb
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\obj\Debug\net5.0\Application.dll
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\obj\Debug\net5.0\ref\Application.dll
+C:\Users\adamh\Desktop\Projekty\StackoverflowTags\Application\obj\Debug\net5.0\Application.pdb

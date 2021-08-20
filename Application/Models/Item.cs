@@ -2,11 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace StackoverflowTags.Models.Entities
+namespace Application.Models
 {
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public class Item
     {
         [JsonProperty("name")]

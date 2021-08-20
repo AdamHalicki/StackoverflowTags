@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Services;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using StackoverflowTags.Models;
-using StackoverflowTags.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,21 +14,16 @@ namespace StackoverflowTags.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ITagRepository _tagRepository;
+        private readonly ITagService _tagService;
 
-        public HomeController( ITagRepository tagRepository)
+        public HomeController(ITagService tagService)
         {
-            _tagRepository = tagRepository;
+            _tagService = tagService;
         }
 
         public async Task<IActionResult> Index()
         {
-            TagItem tagItem = new TagItem();
-
-            tagItem = await _tagRepository.GetTagsAsync();
-
-            decimal sum = tagItem.Items.Sum(i => i.Count);
-            tagItem.Items.ForEach(ti => ti.Percentage = ti.Count / sum * 100);
+            var tagItem = await _tagService.GetTagsAsync();
 
             return View(tagItem);
         }
@@ -37,20 +31,16 @@ namespace StackoverflowTags.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(int pageId)
         {
-            TagItem tagItem = new TagItem();
             if(pageId != -1)
             {
-                tagItem = await _tagRepository.GetTagsAsync(pageId);
+                var tagItem = await _tagService.GetTagsAsync(pageId);
+                return View(tagItem);
             }
             else
             {
-                await _tagRepository.GetAllTagsAsync(tagItem);
+                var tagItem = await _tagService.GetAllTagsAsync();
+                return View(tagItem);
             }
-
-            decimal sum = tagItem.Items.Sum(i => i.Count);
-            tagItem.Items.ForEach(ti => ti.Percentage = ti.Count / sum * 100);
-
-            return View(tagItem);
         }
     }
 }

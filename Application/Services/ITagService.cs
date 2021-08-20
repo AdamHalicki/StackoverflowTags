@@ -1,16 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using StackoverflowTags.Models.Entities;
+﻿using Application.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace StackoverflowTags.Models
+namespace Application.Services
 {
-    public interface ITagRepository
+    public interface ITagService
     {
         public Task<TagItem> GetTagsAsync();
         public Task<TagItem> GetTagsAsync(int pageId);
-        public Task GetAllTagsAsync(TagItem tagItem);
+        public Task<TagItem> GetAllTagsAsync();
     }
 }
