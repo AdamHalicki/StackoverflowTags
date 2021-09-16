@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackoverflowTags", "StackoverflowTags\StackoverflowTags.csproj", "{6D1EAF26-7690-40E4-AB1F-0D2ADA95106D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{DADF77FD-FC56-449B-8201-496C2B58673F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{DADF77FD-FC56-449B-8201-496C2B58673F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflowTags.Tests", "StackOverflowTags.Tests\StackOverflowTags.Tests.csproj", "{899D1561-7438-413D-93D6-D713F29283B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DADF77FD-FC56-449B-8201-496C2B58673F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DADF77FD-FC56-449B-8201-496C2B58673F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DADF77FD-FC56-449B-8201-496C2B58673F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{899D1561-7438-413D-93D6-D713F29283B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899D1561-7438-413D-93D6-D713F29283B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899D1561-7438-413D-93D6-D713F29283B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899D1561-7438-413D-93D6-D713F29283B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
